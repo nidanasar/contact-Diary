@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Dirary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+ <body class="bg-blue-400 min-h-screen flex flex-col items-center justify-center">
+  <div class="bg-blue-200 w-[800px] p-6 rounded-md shadow-lg">
+    <h1 class="text-2xl font-bold mb-4 text-center">Contact Diary</h1>
+
+    <!-- Contact Form -->
+    <form id="contactForm" class="bg-white p-6 rounded-md shadow-md flex flex-col gap-4">
+      <input
+        id="nameInput"
+        type="text"
+        placeholder="Your Name"
+        class="p-3 border border-gray-300 rounded-md w-full"
+      />
+      <input
+        id="numberInput"
+        type="text"
+        placeholder="Your Number"
+        class="p-3 border border-gray-300 rounded-md w-full"
+      />
+      <button
+        type="add"
+        class="bg-blue-300 text-black w-32 p-3 rounded-md hover:bg-blue-600"
+      >
+        Add Contact
+      </button>
+    </form>
+
+    <!-- Contact List Display -->
+    <ul id="contactList" class="mt-6 space-y-2">
+      
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
